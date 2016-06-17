@@ -3,6 +3,9 @@ using System.Collections;
 
 public class GameManager : MonoBehaviour {
 
+    public float Timer;
+
+
 	// Use this for initialization
 	void Start () {
 	
@@ -10,6 +13,9 @@ public class GameManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-	
-	}
+        UIManager.Instance.MainTimer.text = Timer.ToString();
+
+    }
+
+
 }
