@@ -1,18 +1,15 @@
 ﻿using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 public class Presets : MonoBehaviour {
-
-    //task info
-    public string taskName { get; set; }
-    public float taskDuration { get; set; }
-    public int taskFrequency { get; set; }
-    public int taskOrder { get; set; }
 
     //Presets info
     public string presetName { get; set; }
     public float presetDuration { get; set; }
     public int presetTotal { get; set; }
+
+    List<Task> taskList = new List<Task>(); 
 
     // Use this for initialization
     void Start () {
